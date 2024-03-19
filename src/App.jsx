@@ -1,4 +1,3 @@
-import { useProducto } from './hooks/useProducto';
 import { useCarrito } from "./hooks/useCarrito";
 
 import Footer from "./components/Footer";
@@ -7,7 +6,6 @@ import Productos from "./components/Productos";
 
 function App() 
 {
-    const [productos] = useProducto([]);
     const {
         carrito,
         esVacio,
@@ -29,7 +27,6 @@ function App()
                 limpiarCarrito={limpiarCarrito}
             />
             <Productos 
-                productos={productos} 
                 agregarProductoCarrito={agregarProductoCarrito}
             />
             <Footer />
