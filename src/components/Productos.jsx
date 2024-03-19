@@ -1,7 +1,7 @@
 import Producto from "./Producto";
 
 
-export default function Productos({ productos, agregarCarrito })
+export default function Productos({ productos, agregarProductoCarrito })
 {
     return (
         <main className="container-xl mt-5">
@@ -14,7 +14,7 @@ export default function Productos({ productos, agregarCarrito })
                         <Producto
                             key={producto.id}
                             producto={producto}
-                            agregarCarrito={agregarCarrito}
+                            agregarProductoCarrito={agregarProductoCarrito}
                         />
                     ))
                 }

@@ -1,4 +1,4 @@
-export default function Producto({producto, agregarCarrito})
+export default function Producto({producto, agregarProductoCarrito})
 {
     const {name, image, description, price } = producto;
 
@@ -14,7 +14,7 @@ export default function Producto({producto, agregarCarrito})
                 <button 
                     type="button"
                     className="btn btn-dark w-100"
-                    onClick={() => agregarCarrito(producto)}
+                    onClick={() => agregarProductoCarrito(producto)}
                 >Agregar al Carrito</button>
             </div>
         </div>
